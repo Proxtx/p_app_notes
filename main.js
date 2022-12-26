@@ -44,5 +44,6 @@ export class App {
         open: this.mainUrl,
         points: this.config.points,
       });
+    this.lastNotes = notes;
   }
 }
