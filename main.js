@@ -34,7 +34,7 @@ export class App {
 
   async checkForNewNotes() {
     let notes = await this.notesApi.getNotes(this.config.pwd);
-    if (notes != this.lastNotes)
+    if (notes != this.lastNotes && notes.trim() != "")
       registerAppEvent({
         app: "Notes",
         type: "Notes Changed",
