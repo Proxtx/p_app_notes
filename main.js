@@ -38,8 +38,8 @@ export class App {
       registerAppEvent({
         app: "Notes",
         type: "Notes Changed",
-        text: `${notes}`,
-        media: [],
+        text: `The notes were updated.`,
+        media: [{ type: "text/", text: notes }],
         time: Date.now(),
         open: this.mainUrl,
         points: this.config.points,
