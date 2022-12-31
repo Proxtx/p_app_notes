@@ -3,7 +3,7 @@ import { genCombine } from "@proxtx/combine-rest/request.js";
 import { genModule } from "@proxtx/combine/combine.js";
 
 export class App {
-  updateCheckInterval = 1 * 60 * 1000;
+  updateCheckInterval = 10 * 60 * 1000;
   lastNotes;
 
   constructor(config) {
